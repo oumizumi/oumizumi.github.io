@@ -25,7 +25,7 @@ export default function Image() {
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
           <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#A8C5DA', marginRight: '14px' }} />
           <span style={{ color: '#A8C5DA', fontSize: '14px', letterSpacing: '0.15em', textTransform: 'uppercase', fontWeight: 400 }}>
-            oumizumi.vercel.app
+            oumizumi.github.io
           </span>
         </div>
 
