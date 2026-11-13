@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     default: 'Oumer Gharad',
     template: '%s · Oumer Gharad',
   },
-  description: 'Second-year CS student at uOttawa building clean interfaces and reliable systems.',
+  description: 'Third-year CS student at uOttawa building clean interfaces and reliable systems.',
   metadataBase: new URL(siteUrl),
   openGraph: {
     title: 'Oumer Gharad',
-    description: 'Second-year CS student at uOttawa building clean interfaces and reliable systems.',
+    description: 'Third-year CS student at uOttawa building clean interfaces and reliable systems.',
     url: siteUrl,
     siteName: 'Oumer Gharad',
     locale: 'en_CA',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Oumer Gharad',
-    description: 'Second-year CS student at uOttawa building clean interfaces and reliable systems.',
+    description: 'Third-year CS student at uOttawa building clean interfaces and reliable systems.',
   },
   robots: {
     index: true,

@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 
+const FORM_ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? '';
+
 export default function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
   const [error, setError] = useState<string>('');
@@ -20,12 +22,14 @@ export default function ContactForm() {
     setStatus('sending');
     setError('');
     try {
-      const res = await fetch('/api/contact', {
+      if (!FORM_ENDPOINT) throw new Error('Contact form is not configured yet. Please email me directly.');
+      if (payload.honeypot) throw new Error('Failed to send');
+      const res = await fetch(FORM_ENDPOINT, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ name: payload.name, email: payload.email, message: payload.message }),
       });
-      const data = await res.json();
+      const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data?.error || 'Failed to send');
       setStatus('success');
       form.reset();

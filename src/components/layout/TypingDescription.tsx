@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 
 export default function TypingDescription() {
-    const fullText = "Welcome to my personal website. History, space, and football, in no particular order; people are my favorite stories.";
+    const fullText = "Welcome to my personal website. History, space, and football, in no particular order.";
     const [text, setText] = useState('');
     const [currentIndex, setCurrentIndex] = useState(0);
     const [started, setStarted] = useState(false);
@@ -25,7 +25,7 @@ export default function TypingDescription() {
         }
     }, [currentIndex, started, fullText]);
 
-  const splitAt = "Welcome to my personal website. History, space, and football, in no particular order; ".length;
+  const splitAt = "Welcome to my personal website. History, space, and football, in no particular order.".length;
   const mainText = text.slice(0, Math.min(text.length, splitAt));
   const accentText = text.length > splitAt ? text.slice(splitAt) : '';
 

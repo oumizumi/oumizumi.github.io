@@ -6,37 +6,36 @@ export const metadata: Metadata = {
   description: 'What I am currently focused on.',
 };
 
-const lastUpdated = 'April 2026';
+const lastUpdated = 'November 2026';
 
 const now = [
   {
     heading: 'Working on',
     items: [
-      'Underwater object detection pipeline at Kelpie Robotics, YOLOv8 + COLMAP vision stack',
-      'Genomic survival prediction research at Mer Lab, Python RandomForest on TCGA ovarian cancer data',
-      'React Native talent marketplace at The Acquist, Supabase auth + PostgreSQL schema design',
+      'Underwater object detection pipeline at Kelpie Robotics - YOLOv8 + COLMAP vision stack',
+      'Genomic survival prediction research at Mer Lab - Python RandomForest on TCGA ovarian cancer data',
+      'React Native talent marketplace at The Acquist - Supabase auth, PostgreSQL schema design',
       'React Native maternal health app restoration for rural Benin (volunteer, L\'Abbraccio ODV)',
     ],
   },
   {
     heading: 'Learning',
     items: [
-      'Operating systems internals, working through the xv6 labs',
-      'Linear algebra more seriously, 3Blue1Brown → Gilbert Strang',
-      'Getting deeper into distributed systems concepts',
+'Linear algebra more seriously - 3Blue1Brown → Gilbert Strang',
+      'Getting more into distributed systems and embedded systems',
     ],
   },
   {
     heading: 'Reading',
     items: [
-      'The Making of the Atomic Bomb by Richard Rhodes',
-      'Surely You\'re Joking, Mr. Feynman by Richard Feynman',
+      'The Making of the Atomic Bomb - Richard Rhodes',
+      'Surely You\'re Joking, Mr. Feynman - Richard Feynman',
     ],
   },
   {
     heading: 'Thinking about',
     items: [
-      'Writing up the Challenger disaster post, the organisational failure angle is more interesting than the engineering one',
+      'Writing up the Challenger disaster post - the organisational failure angle is more interesting than the engineering one',
       'How to build systems that stay reliable under real-world conditions, not just benchmarks',
     ],
   },

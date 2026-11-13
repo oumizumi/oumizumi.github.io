@@ -3,7 +3,7 @@ import { quoteGroups } from '@/data/quotes';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Quotes | oumizumi',
+  title: 'Quotes - oumizumi',
   description: 'A curated collection of quotes I keep coming back to.',
 };
 

@@ -26,16 +26,10 @@ export default function NavBar() {
       className="fixed top-0 left-0 right-0 z-50 border-b border-subtle bg-base/90 backdrop-blur-md"
     >
       <div className="page-container-wide py-4 flex items-center justify-between">
+        {/* Spacer to keep nav in original position */}
+        <div className="w-24" />
 
-        {/* Logo */}
-        <Link
-          href="/"
-          className="text-sm font-medium text-warm-white tracking-widest uppercase hover:text-accent transition-colors duration-200"
-        >
-          oumizumi
-        </Link>
-
-        {/* Desktop nav */}
+{/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
           {links.map((l) => {
             const isActive = l.href === '/' ? pathname === '/' : pathname.startsWith(l.href);

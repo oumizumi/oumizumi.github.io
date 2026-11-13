@@ -40,7 +40,7 @@ export default function Hero() {
         <motion.div variants={fadeUp} className="flex items-center gap-2 mb-6">
           <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse flex-shrink-0" />
           <span className="text-accent font-medium" style={{ fontSize: '13px', letterSpacing: '0.04em' }}>
-            open to new opportunities
+            open to fall 2027 co-op opportunities
           </span>
         </motion.div>
 

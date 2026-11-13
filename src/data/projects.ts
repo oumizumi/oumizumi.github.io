@@ -5,6 +5,8 @@ export type Project = {
   github?: string;
   url?: string;
   year: string;
+  video?: string;
+  image?: string;
 };
 
 export const projects: Project[] = [
