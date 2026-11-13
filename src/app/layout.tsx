@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = 'https://oumizumi.vercel.app';
+const siteUrl = 'https://oumizumi.github.io';
 
 export const metadata: Metadata = {
   title: {

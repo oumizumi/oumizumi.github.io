@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 export const dynamic = 'force-static';
 import { posts } from '@/data/blog';
 
-const baseUrl = 'https://oumizumi.vercel.app';
+const baseUrl = 'https://oumizumi.github.io';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
